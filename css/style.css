@@ -1,0 +1,148 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+    color: #3a3a3a;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+	font-size: .95em;
+    margin-bottom: 1.8em;
+    padding-bottom: 10px;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: #161717;
+    padding: 0px;
+}
+.header{
+    background-color: #ebedec;
+}
+.container{
+    width: 90%;
+    /*
+    margin-left: 10px;
+    margin-right: 10px;
+    */
+}
+.active{
+    background-color: white;
+    border: #161717;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding: 10px;
+}
+a {
+    color: #161717;
+}
+.student-name{
+    padding-top: 10px;
+}
+.main-nav {
+    list-style-type: none;
+}
+/* This is making the footers on the right side take up much space */
+.links{
+    display: inline-flex;
+}
+.home,
+.contact{
+    visibility: hidden;
+}
+/* ================================= 
+  Media Queries 
+==================================== */
+@media (min-width: 768px) {
+
+    .active{
+       display: inline-block;
+    }
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+    }
+    .container {
+		width: 85%;
+        max-width: 1150px;
+        margin: 20px;
+    }
+    .p1{
+        width: 50%;
+    }
+    .img1{
+        width: 50%;
+        background-color: gray;
+    }
+    .col{
+        float: right;
+    }
+    .intro{
+        margin: 20px;
+    }
+    .marketing,
+    .search,
+    .Travel,
+    .Map,
+    .Photo,
+    .calculator{
+        width: 50%;
+    }
+    .float{
+        float: left;
+        padding-left: 10px;
+    }
+    .home,
+    .contact{
+        visibility: visible;
+    }
+    .links h3{
+        padding-left: 40px;
+    }
+}
+@media (min-width: 1024px) {
+
+    .marketing,
+    .search,
+    .Travel,
+    .Map,
+    .Photo,
+    .calculator{
+        width: 33%;
+    }
+    .float{
+        float: left;
+        padding-left: 10px;
+    }
+}
