@@ -49,10 +49,12 @@ img {
 }
 .container{
     width: 90%;
-    /*
-    margin-left: 10px;
-    margin-right: 10px;
-    */
+    margin: auto;
+}
+.intro {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
 }
 .active{
     background-color: white;
@@ -67,17 +69,20 @@ a {
 }
 .student-name{
     padding-top: 10px;
+    margin-top: 0;
 }
 .main-nav {
     list-style-type: none;
+    padding-left: 0;
 }
 /* This is making the footers on the right side take up much space */
-.links{
-    display: inline-flex;
-}
 .home,
 .contact{
-    visibility: hidden;
+    display: none;
+}
+.p1{
+    max-width: 90%;
+    margin: auto;
 }
 /* ================================= 
   Media Queries 
@@ -86,6 +91,7 @@ a {
 
     .active{
        display: inline-block;
+       background-color: transparent;
     }
 
 	.clearfix::after {
@@ -93,13 +99,9 @@ a {
 		display: table;
 		clear: both;
     }
-    .container {
-		width: 85%;
-        max-width: 1150px;
-        margin: 20px;
-    }
     .p1{
         width: 50%;
+        text-align: left;
     }
     .img1{
         width: 50%;
@@ -107,9 +109,6 @@ a {
     }
     .col{
         float: right;
-    }
-    .intro{
-        margin: 20px;
     }
     .marketing,
     .search,
@@ -121,7 +120,7 @@ a {
     }
     .float{
         float: left;
-        padding-left: 10px;
+        padding-left: 30px;
     }
     .home,
     .contact{
@@ -129,6 +128,9 @@ a {
     }
     .links h3{
         padding-left: 40px;
+    }
+    .links{
+        display: inline-block;
     }
 }
 @media (min-width: 1024px) {
