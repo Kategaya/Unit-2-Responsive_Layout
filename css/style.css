@@ -68,7 +68,7 @@ a {
     color: #161717;
 }
 .student-name{
-    padding-top: 10px;
+    padding-top: 30px;
     margin-top: 0;
 }
 .main-nav {
@@ -76,10 +76,9 @@ a {
     padding-left: 0;
 }
 /* This is making the footers on the right side take up much space */
-.home,
-.contact{
+.desktop-nav {
     display: none;
-}
+  }  
 .p1{
     max-width: 90%;
     margin: auto;
@@ -122,15 +121,14 @@ a {
         float: left;
         padding-left: 30px;
     }
-    .home,
-    .contact{
-        visibility: visible;
-    }
     .links h3{
         padding-left: 40px;
     }
-    .links{
+    .desktop-nav {
         display: inline-block;
+      }
+    .mobile-nav{
+        display: none;
     }
 }
 @media (min-width: 1024px) {
@@ -146,5 +144,11 @@ a {
     .float{
         float: left;
         padding-left: 10px;
+    }
+    .first-header{
+        display: flex;
+        justify-content: space-between;
+        max-width: 90%;
+        margin: auto;
     }
 }
