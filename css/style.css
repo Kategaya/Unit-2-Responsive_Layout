@@ -38,6 +38,13 @@ a {
 img {
 	max-width: 100%;
 }
+a {
+    text-decoration: none;
+    color: #999;
+  }
+  a:hover {
+    color: #6633ff;
+  }
 .nav{
     display: flex;
     justify-content: space-between;
@@ -74,6 +81,7 @@ a {
 .main-nav {
     list-style-type: none;
     padding-left: 0;
+    color: white;
 }
 /* This is making the footers on the right side take up much space */
 .desktop-nav {
