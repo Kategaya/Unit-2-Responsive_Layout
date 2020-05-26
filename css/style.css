@@ -45,7 +45,7 @@ a {
   a:hover {
     color: #6633ff;
   }
-.nav{
+.ft{
     display: flex;
     justify-content: space-between;
     color: #161717;
@@ -127,7 +127,7 @@ a {
     }
     .float{
         float: left;
-        padding-left: 30px;
+        padding: 0 15px;
     }
     .links h3{
         padding-left: 40px;
