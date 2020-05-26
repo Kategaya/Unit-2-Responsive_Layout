@@ -139,7 +139,7 @@ a {
         display: none;
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1400px){
 
     .marketing,
     .search,
